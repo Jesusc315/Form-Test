@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunity Submission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, input[type="text"], input[type="file"], input[type="url"], textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        button[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Submit an Opportunity</h1>
+
+        <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSfTUSB1zsEk0XNZizybBMbmh_mDPmT4TY4b60ZgLwkz72cjuw/formResponse" method="post" >
+            <!-- Organization -->
+            <div class="form-group">
+                <label for="organization">Organization:</label>
+                <input type="text" id="organization" name="entry.1713881044" required>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="form-group">
+                <label for="contact-info">Contact Information:</label>
+                <input type="text" id="contact-info" name="entry.1513577564" required>
+            </div>
+
+            <!-- Grade -->
+            <div class="form-group">
+                <label for="grade">Grade:</label>
+                <div>
+                    <input type="checkbox" id="grade-9" name="entry.773379900" value="9th">
+                    <label for="grade-9">Grade 9</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="grade-10" name="entry.773379900" value="10th">
+                    <label for="grade-10">Grade 10</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="grade-11" name="entry.773379900" value="11th">
+                    <label for="grade-11">Grade 11</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="grade-12" name="entry.773379900" value="12th">
+                    <label for="grade-12">Grade 12</label>
+                </div>
+            </div>
+            
+            <!-- Location of Opportunity -->
+            <div class="form-group">
+                <label for="location">Location of Opportunity:</label>
+                <input type="text" id="location" name="entry.459889888" required>
+            </div>
+
+            <!-- Is the opportunity paid? -->
+            <div class="form-group">
+                <label>Is the opportunity paid?</label>
+                <input type="radio" id="paid-yes" name="entry.683405312" value="yes">
+                <label for="paid-yes">Yes</label>
+                <input type="radio" id="paid-no" name="entry.683405312" value="no">
+                <label for="paid-no">No</label>
+            </div>
+
+            <!-- What type of opportunity? -->
+            <div class="form-group">
+                <label>What type of opportunity?</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="guest-speakers" name="entry.1386313019" value="Guest Speakers">
+                    <label for="guest-speakers">Guest Speakers</label>
+                    <input type="checkbox" id="career-days" name="entry.1386313019" value="Career Days">
+                    <label for="career-days">Career Days</label>
+                    <input type="checkbox" id="career-mentoring" name="entry.1386313019" value="Career Mentoring">
+                    <label for="career-mentoring">Career Mentoring</label>
+                    <input type="checkbox" id="workplace-tours" name="entry.1386313019" value="Workplace Tours">
+                    <label for="workplace-tours">Workplace Tours</label>
+                    <input type="checkbox" id="informational-interviews" name="entry.1386313019" value="Informational Interviews">
+                    <label for="informational-interviews">Informational Interviews</label>
+                    <input type="checkbox" id="job-shadowing" name="entry.1386313019" value="Job Shadowing">
+                    <label for="job-shadowing">Job Shadowing</label>
+                    <input type="checkbox" id="mock-interviews" name="entry.1386313019" value="Mock Interviews">
+                    <label for="mock-interviews">Mock Interviews</label>
+                    <input type="checkbox" id="workplace-challenges" name="entry.1386313019" value="Workplace Challenges">
+                    <label for="workplace-challenges">Workplace Challenges</label>
+                    <input type="checkbox" id="internships" name="entry.1386313019" value="Internships">
+                    <label for="internships">Internships</label>
+                    <input type="checkbox" id="work-experiences" name="entry.1386313019" value="Work Experiences">
+                    <label for="work-experiences">Work Experiences</label>
+                    <input type="checkbox" id="other" name="entry.1386313019" value="Other">
+                    <label for="other">Other:</label>
+                    <input type="text" id="other-opportunity" name="entry.1386313019">
+                </div>
+            </div>
+
+            <!-- Upload a flyer for this opportunity -->
+            <div class="form-group">
+                <label for="flyer">Upload a flyer for this opportunity:</label>
+                <input type="file" id="flyer" name="entry.1665537514" accept=".jpg, .jpeg, .png, .pdf, .docx" >
+                <small>Upload 1 supported file. Max 10 MB.</small>
+            </div>
+
+            <!-- Link to a website of opportunity -->
+            <div class="form-group">
+                <label for="website">Link to a website of opportunity:</label>
+                <input type="url" id="website" name="entry.577189554">
+            </div>
+
+            <!-- Description of opportunity -->
+            <div class="form-group">
+                <label for="description">Description of opportunity:</label>
+                <textarea id="description" name="entry.808362608" required></textarea>
+                <small>Add the Hours and Weekdays if you have this information, as well as the start date of said Internship and the deadline to sign up for it.</small>
+            </div>
+
+            <!-- Submit and Clear buttons -->
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear form</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
